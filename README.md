@@ -1,6 +1,5 @@
 ## Mobile Pages
-Simple swipe pages layout for init web-mobile projects
-[Demo](http://hanshavin.github.io/Mobile-Pages/)
+Simple swipe pages layout for init web-mobile projects. [Demo](http://hanshavin.github.io/Mobile-Pages/)
 
 ### Usage
 Create the basic html structure: a container *(wrapper)* which will fill the screen of the device and into the elements *(pages--&)* that will be the pages.
@@ -11,13 +10,13 @@ The tangs and the names of these classes may change that you want. Here is an ex
 <body>
 	<div class="wrapper">
 		<div class="page--1">
-			<p class="title">Page 1</p>
+			<!-- Page 1 content -->
 		</div>
 		<div class="page--2">
-			<p class="title">Page 2</p>
+			<!-- Page 2 content -->
 		</div>
 		<div class="page--3">
-			<p class="title">Page 3</p>
+			<!-- Page 3 content -->
 		</div>
 	</div>
 </body>
