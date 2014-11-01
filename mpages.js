@@ -22,7 +22,7 @@ function MPages (container, options) {
 
 		goTo(pos)
 
-		animation()
+		setTimeout(function () { animation() }, 500)
 
 		slides()
 	}
