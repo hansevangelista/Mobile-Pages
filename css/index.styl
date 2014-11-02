@@ -1,21 +1,18 @@
 @import nib
 
+randrom()
+  return math(math(0, 'random') * 255, 'floor')
+  
 body
 	font-family Arial
 
 page()
 	position relative
 
-.page
-	&--1
+for n in (0...5)
+	.page--{n}
 		page()
-		background rgba(red, 0.5)
-	&--2	
-		page()
-		background rgba(yellow, 0.5)
-	&--3
-		page()
-		background rgba(blue, 0.5)
+		background rgba(randrom(), randrom(), randrom(), 0.5)
 
 .title
 	margin 0

@@ -1,17 +1,25 @@
 body {
   font-family: Arial;
 }
+.page--0 {
+  position: relative;
+  background: rgba(26,171,248,0.5);
+}
 .page--1 {
   position: relative;
-  background: rgba(255,0,0,0.5);
+  background: rgba(165,235,131,0.5);
 }
 .page--2 {
   position: relative;
-  background: rgba(255,255,0,0.5);
+  background: rgba(192,84,51,0.5);
 }
 .page--3 {
   position: relative;
-  background: rgba(0,0,255,0.5);
+  background: rgba(86,122,134,0.5);
+}
+.page--4 {
+  position: relative;
+  background: rgba(88,7,105,0.5);
 }
 .title {
   margin: 0;

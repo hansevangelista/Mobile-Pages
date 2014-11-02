@@ -3,15 +3,22 @@ function MPages (container, options) {
 
 	"use strict"
 
-	var pages = container.children
+	var name = options.pageClass
 	var pos = options.initPage || 0
 	var speed = options.timeSlide || 500
+
+	var pages
 
 	function setup () {
 
 		document.body.style.margin = "0px"
 
 		container.classList.add("mcontainer")
+
+		if(name) pages = container.querySelectorAll('.' + name)
+		else pages = container.children
+
+		console.log(pages)
 
 		for (var i = 0; i < pages.length; i++)
 			pages[i].classList.add("mpage")
