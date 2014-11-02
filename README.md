@@ -7,7 +7,7 @@ Create the basic html structure:
 * A container element which will fill the screen of the device.
 * Page elements that will reside inside the container.
 
-Html tags and classnames may be changed *(however)* you want. This library will check for the classname of the container you provide and will assume each child is a page. Here is an example:
+Html tags and classnames may be changed *however* you want. This library will check for the classname of the container you provide and will assume each child is a page. Here is an example:
 
 ``` html
 <body>
