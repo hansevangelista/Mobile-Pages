@@ -1,10 +1,13 @@
 ## Mobile Pages
-Simple swipe pages layout for init web-mobile projects. [Demo](http://hanshavin.github.io/Mobile-Pages/)
+Simple swipe pages layout for starting web-mobile projects. [Demo](http://hanshavin.github.io/Mobile-Pages/)
 
 ### Usage
-Create the basic html structure: a container *(wrapper)* which will fill the screen of the device and into the elements *(pages--&)* that will be the pages.
+Create the basic html structure:
 
-The tangs and the names of these classes may change that you want. Here is an example:
+* A container element which will fill the screen of the device.
+* Page elements that will reside inside the container.
+
+Html tags and classnames may be changed *(however)* you want. This library will check for the classname of the container you provide and will assume each child is a page. Here is an example:
 
 ``` html
 <body>
@@ -32,9 +35,13 @@ Include the mpages.css and mpages.js files in your project.
 <script type="text/javascript" src="mpages.js"></script>
 ```
 
-Create MPages object from javascript using 2 parameters: the container *(wrapper)* object and a json object configuration.
+Create the MPages object from javascript using these 2 parameters:
+
+* The container classname.
+* A JSON object for configuration.
 
 ``` js
+
 window.mPages = new MPages(document.querySelector('.wrapper'), {
 	timeSlide: 500,
 	initPage: 1
@@ -44,8 +51,8 @@ window.mPages = new MPages(document.querySelector('.wrapper'), {
 ### Config Options
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
-timeSlide | int | 500 | Duration of change of pages
-initPage | int | 0 | Page that will be visible when you start the application *(counting from 0 for the first page)*
+timeSlide | int | 500 | Transition duration
+initPage | int | 0 | Index of the page to be shown at startup *(Zero-based indexing)*
 
 ### License
 Copyright (c) 2014 [Hans Evangelista](https://twitter.com/hanshavin_code) Licensed under the [The MIT License (MIT)](http://opensource.org/licenses/MIT).
