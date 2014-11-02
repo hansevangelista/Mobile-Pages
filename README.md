@@ -37,7 +37,7 @@ Include the mpages.css and mpages.js files in your project.
 
 Create the MPages object from javascript using these 2 parameters:
 
-* The container classname.
+* The container object.
 * A JSON object for configuration.
 
 ``` js
@@ -51,7 +51,7 @@ window.mPages = new MPages(document.querySelector('.wrapper'), {
 ### Config Options
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
-timeSlide | int | 500 | Transition duration
+timeSlide | int | 500 | Swipe transition duration *(in miliseconds)*
 initPage | int | 0 | Index of the page to be shown at startup *(Zero-based indexing)*
 
 ### License
