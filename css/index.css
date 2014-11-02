@@ -1,25 +1,25 @@
 body {
   font-family: Arial;
 }
-.page--0 {
-  position: relative;
-  background: rgba(26,171,248,0.5);
-}
 .page--1 {
   position: relative;
-  background: rgba(165,235,131,0.5);
+  background: rgba(6,113,209,0.75);
 }
 .page--2 {
   position: relative;
-  background: rgba(192,84,51,0.5);
+  background: rgba(237,185,20,0.75);
 }
 .page--3 {
   position: relative;
-  background: rgba(86,122,134,0.5);
+  background: rgba(31,172,221,0.75);
 }
 .page--4 {
   position: relative;
-  background: rgba(88,7,105,0.5);
+  background: rgba(103,197,138,0.75);
+}
+.page--5 {
+  position: relative;
+  background: rgba(213,70,6,0.75);
 }
 .title {
   margin: 0;
@@ -32,4 +32,30 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 2em;
+}
+.wrapper {
+  position: relative;
+}
+.wrapper .header {
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+}
+.wrapper .header h1 {
+  text-align: center;
+  margin: 0;
+}
+.wrapper .footer {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+}
+.wrapper .footer p {
+  text-align: center;
+  margin: 0;
 }

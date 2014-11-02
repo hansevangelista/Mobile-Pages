@@ -1,13 +1,16 @@
 .mcontainer {
   white-space: nowrap;
-  font-size: 0;
+  display: table;
+  width: 100%;
   overflow: hidden;
 }
-.mpage {
+.mcontainer * {
   white-space: normal;
-  font-size: 1rem;
+}
+.mpage {
   display: inline-block;
   vertical-align: top;
   width: 100%;
   overflow: auto;
+  z-index: -1;
 }

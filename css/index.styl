@@ -9,10 +9,10 @@ body
 page()
 	position relative
 
-for n in (0...5)
+for n in (1...6)
 	.page--{n}
 		page()
-		background rgba(randrom(), randrom(), randrom(), 0.5)
+		background rgba(randrom(), randrom(), randrom(), 0.75)
 
 .title
 	margin 0
@@ -21,3 +21,25 @@ for n in (0...5)
 	left 50%
 	transform translate(-50%, -50%)
 	font-size 2em
+
+.wrapper
+	position relative
+	.header
+		position absolute
+		background white
+		left 0
+		right 0
+		padding 0.5em
+		h1
+			text-align center
+			margin 0
+	.footer
+		position absolute
+		background white
+		bottom 0
+		left 0
+		right 0
+		padding 0.5em
+		p
+			text-align center
+			margin 0
